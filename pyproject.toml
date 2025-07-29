@@ -3,14 +3,14 @@ name = "cheshire_cat_api"
 version = "1.4.9"
 description = "😸 Cheshire-Cat API Client"
 authors = [
-    { name = "Chesire Cat AI" }
+  { name = "Chesire Cat AI" }
 ]
 maintainers = [
-    "Nicola Corbellini",
-    "Piero Savastano",
-    "Emanuele Morrone",
-    "Marco Valenti",
-    "Daniele Nicosia"
+  { name = "Nicola Corbellini" },
+  { name = "Piero Savastano" },
+  { name = "Emanuele Morrone" },
+  { name = "Marco Valenti" },
+  { name = "Daniele Nicosia" }
 ]
 homepage = "https://cheshirecat.ai/"
 license = { text = "GPL-3.0-only" }
@@ -18,22 +18,22 @@ readme = "README.md"
 repository = "https://github.com/cheshire-cat-ai/cheshire-cat-api"
 keywords = ["OpenAPI", "Cheshire-Cat", "LLM", "OpenSource"]
 classifiers = [
-    "Topic :: Scientific/Engineering :: Artificial Intelligence",
-    "Framework :: FastAPI",
-    "Development Status :: 3 - Alpha"
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+  "Framework :: FastAPI",
+  "Development Status :: 3 - Alpha"
 ]
 
 [tool.setuptools.packages.find]
 include = ["cheshire_cat_api*"]
 
 [tool.poetry]
-
+# Poetry-specific settings can remain here if needed (e.g. scripts, plugins)
+  
 [tool.poetry.dependencies]
 python = "^3.10"
-
-urllib3 = ">= 1.25.3, <2.1.0"
+urllib3 = ">=1.25.3, <2.1.0"
 python-dateutil = ">=2.5.3"
-pydantic = ">= 2"
+pydantic = ">=2"
 websocket-client = ">=1.6.1"
 
 [tool.poetry.dev-dependencies]
